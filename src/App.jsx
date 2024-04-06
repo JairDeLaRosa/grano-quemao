@@ -1,28 +1,20 @@
 import { useState } from "react";
-import logo from "./assets/logo.jpeg";
-import fotoPerfil from "./assets/fotoPerfil.jpeg";
 import { Card } from "./components/Card";
 import logoListarProductos from "./assets/listaProductos.png"
 import logoRegistrarProductos from "./assets/inventario.png"
 import logoSalidas from "./assets/logoSalidas.png"
 import logoMovimientos from "./assets/movimientos.png"
+import { Nav } from "./components/Nav";
+import { Aside } from "./components/Aside";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <nav > 
-        <img src={logo} alt="logo" className="logo" />
-        <button className="btn grano-quemado">Grano Quemado</button>
-        <button className="btn salir">Salir</button>
-      </nav>
+      <Nav/>
 
-      <aside>
-        <img src={fotoPerfil} alt="fotoPerfil" className="fotoPerfil top" />
-        <h3 className="info top">Administrador</h3>
-        <h3 className="info">Jair De La Rosa</h3>
-      </aside>
+      <Aside/>
       <section>
         <h1 className="title">Sistema Cafetero</h1>
         <br />
