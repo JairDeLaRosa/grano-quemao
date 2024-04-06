@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@1,500&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display&family=Poppins:wght@200;300&display=swap');
+body{
+  background-color: #fff9e1;
+}
+nav{
+  background-color: #7e634e;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  z-index: 100;
+}
+aside{
+  position: fixed;
+  top: 60px;
+  background-color: #907761;
+  width: 250px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo{
+  position: absolute;
+  width: 60px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.containerForm{
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: #7e634e;
+  padding: 30px;
+  border-radius: 30px;
+}
+label{
+  color: #fff9e1;
+}
+.btn-secondary{
+  
+  width: 100%;
+}
+h1{
+  color: #fff9e1;
+}
+.grano-quemado{
+  position: absolute;
+  color: #fff9e1;
+  left: 90px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 20px;
+  transition: all 0.05s;
+
+}
+.salir{
+  position: absolute;
+  right: 90px;
+  color: #fff9e1;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 20px;
+  transition: all 0.05s;
+}
+.salir:hover,.grano-quemado:hover{
+  font-size: 21px;
+  color: #fff9e1;
+  background-color: #816a58;
+}
+.fotoPerfil{
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.top{
+  margin-top: 15px;
+}
+.info{
+  color: #fff9e1;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+section{
+  top: 60px;
+  position: absolute;
+  left: 270px;
+  width: 78%;
+}
+.title{
+  color: #7e634e;
+  display: block;
+}
+.btn-Ligth:hover{
+  background-color: rgb(240, 240, 240);
+}
+.card{
+  height: 320px;
+}
