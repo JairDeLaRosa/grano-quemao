@@ -5,6 +5,7 @@ import logoSalidas from "./assets/logoSalidas.png";
 import logoMovimientos from "./assets/movimientos.png";
 import { Nav } from "./components/Nav";
 import { Aside } from "./components/Aside";
+import { ADMIN_INVENTARY_CONTROL } from "./router/RoutesTypes";
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
             <Card
               title={"Control de inventario"}
               optionLogo={logoRegistrarProductos}
-              ruta={"/sistema_cafetero/control_inventario"}
+              ruta={ADMIN_INVENTARY_CONTROL.INVENTARY_CONTROL}
             />
             <br />
             <Card

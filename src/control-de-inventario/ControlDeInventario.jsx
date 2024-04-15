@@ -1,4 +1,3 @@
-import React from "react";
 import { Nav } from "../components/Nav";
 import { Aside } from "../components/Aside";
 import { Fila } from "./Fila";
@@ -88,7 +87,7 @@ export const ControlDeInventario = () => {
         <div className="back">
           <select
             onChange={handleSelect}
-            class="form-select select-tipo-insumo"
+            className="form-select select-tipo-insumo"
             aria-label="Default select example"
           >
             <option value="insumos">Insumos</option>
@@ -101,49 +100,49 @@ export const ControlDeInventario = () => {
           </button>
         </div>
 
-        <div class={visibleTable1}>
-          <div class="row encabezado">
-            <div class="col-2 celda">Id</div>
-            <div class="col-2 celda">Tipo</div>
-            <div class="col-2 celda">Nombre</div>
-            <div class="col-2 celda">Cantidad</div>
-            <div class="col-2 celda">Costos</div>
-            <div class="col-2 celda">Acciones</div>
+        <div className={visibleTable1}>
+          <div className="row encabezado">
+            <div className="col-2 celda">Id</div>
+            <div className="col-2 celda">Tipo</div>
+            <div className="col-2 celda">Nombre</div>
+            <div className="col-2 celda">Cantidad</div>
+            <div className="col-2 celda">Costos</div>
+            <div className="col-2 celda">Acciones</div>
           </div>
 
           <Fila alert={alert} edit={setEditar} setEdit={setTipeEdit} tipeEdit={"insumos"}/>
         </div>
-        <div class={visibleTable2}>
-          <div class="row encabezado">
-            <div class="col-2 celda">Id2</div>
-            <div class="col-2 celda">Tipo</div>
-            <div class="col-2 celda">Nombre</div>
-            <div class="col-2 celda">Cantidad</div>
-            <div class="col-2 celda">Costos</div>
-            <div class="col-2 celda">Acciones</div>
+        <div className={visibleTable2}>
+          <div className="row encabezado">
+            <div className="col-2 celda">Id2</div>
+            <div className="col-2 celda">Tipo</div>
+            <div className="col-2 celda">Nombre</div>
+            <div className="col-2 celda">Cantidad</div>
+            <div className="col-2 celda">Costos</div>
+            <div className="col-2 celda">Acciones</div>
           </div>
 
           <Fila alert={alert} edit={setEditar} setEdit={setTipeEdit} tipeEdit={"maquinaria"}/>
         </div>
-        <div class={visibleTable3}>
-          <div class="row encabezado">
-            <div class="col-2 celda">Id3</div>
-            <div class="col-2 celda">Tipo</div>
-            <div class="col-2 celda">Nombre</div>
-            <div class="col-2 celda">Cantidad</div>
-            <div class="col-2 celda">Costos</div>
-            <div class="col-2 celda">Acciones</div>
+        <div className={visibleTable3}>
+          <div className="row encabezado">
+            <div className="col-2 celda">Id3</div>
+            <div className="col-2 celda">Tipo</div>
+            <div className="col-2 celda">Nombre</div>
+            <div className="col-2 celda">Cantidad</div>
+            <div className="col-2 celda">Costos</div>
+            <div className="col-2 celda">Acciones</div>
           </div>
 
           <Fila alert={alert} edit={setEditar} setEdit={setTipeEdit} tipeEdit={"otro"}/>
         </div>
-        <div class={visible} role="alert">
+        <div className={visible} role="alert">
           Elemento eliminado
         </div>
-        <div class={visibleEdit} role="alert">
+        <div className={visibleEdit} role="alert">
           Elemento editado
         </div>
-        <div class={visibleAgg} role="alert">
+        <div className={visibleAgg} role="alert">
           Elemento agregado
         </div>
 
