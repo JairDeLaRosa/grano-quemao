@@ -5,3 +5,6 @@ export const BASIC_MODULES_ROUTES = {
 export const ADMIN_INVENTARY_CONTROL = {
    INVENTARY_CONTROL: "/inventary-control",
 }
+export const ADMIN_GESTION_CULTIVOS = {
+  GESTION_CULTIVOS: "/gestion-cultivos",
+}

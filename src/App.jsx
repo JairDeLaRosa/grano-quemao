@@ -5,7 +5,7 @@ import logoSalidas from "./assets/logoSalidas.png";
 import logoMovimientos from "./assets/movimientos.png";
 import { Nav } from "./components/Nav";
 import { Aside } from "./components/Aside";
-import { ADMIN_INVENTARY_CONTROL } from "./router/RoutesTypes";
+import { ADMIN_INVENTARY_CONTROL, ADMIN_GESTION_CULTIVOS } from "./router/RoutesTypes";
 
 function App() {
 
@@ -36,6 +36,7 @@ function App() {
             <Card
               title={"Gestión de cultivos"}
               optionLogo={logoListarProductos}
+              ruta={ADMIN_GESTION_CULTIVOS.GESTION_CULTIVOS}
             />
             <br />
             <Card
