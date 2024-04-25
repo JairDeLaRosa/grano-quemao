@@ -4,7 +4,9 @@ import { EditarMaquinaria } from "./EditarMaquinaria";
 import { EditOtros } from "./EditOtros";
 
 export const Edit = ({ tipe, edit,alertEdit }) => {
-
+  const back=()=>{
+    edit(false)
+  }
     const onSubmit = (data) => {
     console.log(data);
     alertEdit()
@@ -13,9 +15,9 @@ export const Edit = ({ tipe, edit,alertEdit }) => {
   return (
     <div className="editar">
       <div className="containerForm">
-        {(tipe==="insumos")?<EditInsumos onSubmit={onSubmit}/>:null}
-        {(tipe==="maquinaria")?<EditarMaquinaria onSubmit={onSubmit}/>:null}
-        {(tipe==="otro")?<EditOtros onSubmit={onSubmit}/>:null}
+        {(tipe==="insumos")?<EditInsumos onSubmit={onSubmit} back={back}/>:null}
+        {(tipe==="maquinaria")?<EditarMaquinaria onSubmit={onSubmit} back={back}/>:null}
+        {(tipe==="otro")?<EditOtros onSubmit={onSubmit} back={back}/>:null}
       </div>
       
     </div>
