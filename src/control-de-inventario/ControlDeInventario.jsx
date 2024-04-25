@@ -79,7 +79,7 @@ export const ControlDeInventario = () => {
       <section>
         <div className="back">
           <h1 className="title">Sistema de inventario</h1>
-          <button className="btn " onClick={back}>
+          <button className="buttonBackInventario" onClick={back}>
             <IoIosArrowRoundBack size={30} />
           </button>
         </div>
