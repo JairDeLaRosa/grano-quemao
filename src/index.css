@@ -97,7 +97,7 @@ section{
   width: 78%;
 }
 .title{
-  color: #7e634e;
+  color: #42372e;
   display: block;
 }
 .btn-Ligth:hover{
@@ -183,4 +183,13 @@ button{
   border-radius: 10px;
   transition: all 0.3s;
   border: none;
+}
+.select{
+  width: 200px;
+}
+.colorSubtitle{
+  color: #7e634e;
+}
+.cardActividad{
+  width: 49%;
 }
