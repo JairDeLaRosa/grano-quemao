@@ -1,23 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import { Nav } from "../components/Nav";
 import { Aside } from "../components/Aside";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 import { Actividad } from "./Actividad";
+import { AgregarActividad } from "./AgregarActividad";
 
 export const GestionDeCultivos = () => {
   const navigate = useNavigate();
+  const [verAggActividad, setVerAggActividad]=useState(false)
+  const [fixed, setFixed]=useState("")
   const back = () => {
     navigate(-1);
   };
   const handleSelect = ({ target }) => {
     console.log(target.value);
   };
+  const agregarActividad=()=>{
+    setVerAggActividad(true)
+    setFixed("fixed")
+  }
   return (
     <>
       <Nav />
       <Aside />
-      <section>
+      {verAggActividad ? <AgregarActividad/> :null}
+      
+      <section className={fixed}>
+        
         <div className="container">
           <div className="d-flex justify-content-between">
             <h1 className="title">Gestion de cultivos</h1>
@@ -25,7 +35,7 @@ export const GestionDeCultivos = () => {
               <IoIosArrowRoundBack size={30} />
             </button>
           </div>
-
+          <br />
           <div className="row">
             <h3 className="col-3 colorSubtitle">Seleccionar cultivo</h3>
             <div className="col-7">
@@ -56,8 +66,10 @@ export const GestionDeCultivos = () => {
                 <option value="Cultivo de cafe">Planificacion</option>
                 <option value="Cultivo de plantas">Cultivo de plantas</option>
               </select>
+              
             </div>
-            <div className="col-9 d-flex justify-content-between">
+            <button className="btn btn-primary aggActividad col-2" onClick={agregarActividad}>Agregar actividad</button>
+            <div className="col-7 d-flex justify-content-between align-items-center">
               <div>Fecha de inicio: 00/33/2020</div>
               <div>Fecha de fin: 00/33/2020</div>
             </div>
@@ -71,6 +83,7 @@ export const GestionDeCultivos = () => {
             </div>
           </div>
         </div>
+        <br />
       </section>
     </>
   );
