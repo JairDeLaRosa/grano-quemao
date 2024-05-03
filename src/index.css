@@ -127,6 +127,7 @@ section{
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 50px;
 }
 .celdas{
   background-color: white;
@@ -199,4 +200,7 @@ button{
 }
 .aggActividad{
   width: 160px;
+}
+.agregar{
+  width: 140px;
 }

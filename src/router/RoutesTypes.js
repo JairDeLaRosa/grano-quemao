@@ -8,3 +8,12 @@ export const ADMIN_INVENTARY_CONTROL = {
 export const ADMIN_GESTION_CULTIVOS = {
   GESTION_CULTIVOS: "/gestion-cultivos",
 }
+export const ADMIN_CONTROL_CALIDAD = {
+  CONTROL_CALIDAD: "/control-calidad",
+}
+export const ADMIN_CONTROL_COSTOS_FINANZAS = {
+  CONTROL_COSTOS_FINANZAS: "/control-costos-finanzas",
+}
+export const ADMIN_GESTION_MANTENIMIENTO = {
+  GESTION_MANTENIMIENTO: "/gestion-mantenimiento",
+}

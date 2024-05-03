@@ -5,7 +5,7 @@ import logoSalidas from "./assets/logoSalidas.png";
 import logoMovimientos from "./assets/movimientos.png";
 import { Nav } from "./components/Nav";
 import { Aside } from "./components/Aside";
-import { ADMIN_INVENTARY_CONTROL, ADMIN_GESTION_CULTIVOS } from "./router/RoutesTypes";
+import { ADMIN_INVENTARY_CONTROL, ADMIN_GESTION_CULTIVOS, ADMIN_CONTROL_CALIDAD, ADMIN_CONTROL_COSTOS_FINANZAS, ADMIN_GESTION_MANTENIMIENTO } from "./router/RoutesTypes";
 
 function App() {
 
@@ -46,15 +46,16 @@ function App() {
             <br />
           </div>
           <div className="col-3">
-            <Card title={"Control de calidad"} optionLogo={logoSalidas} />
+            <Card title={"Control de calidad"} optionLogo={logoSalidas} ruta={ADMIN_CONTROL_CALIDAD.CONTROL_CALIDAD}/>
             <br />
-            <Card title={"Gestión de mantenimiento"} optionLogo={logoSalidas} />
+            <Card title={"Gestión de mantenimiento"} optionLogo={logoSalidas} ruta={ADMIN_GESTION_MANTENIMIENTO.GESTION_MANTENIMIENTO}/>
             <br />
           </div>
           <div className="col-3">
             <Card
               title={"Control de costos y finanzas"}
               optionLogo={logoMovimientos}
+              ruta={ADMIN_CONTROL_COSTOS_FINANZAS.CONTROL_COSTOS_FINANZAS}
             />
             <br />
             <Card
