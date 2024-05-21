@@ -3,9 +3,11 @@ import logoListarProductos from "./assets/listaProductos.png";
 import logoRegistrarProductos from "./assets/inventario.png";
 import logoSalidas from "./assets/logoSalidas.png";
 import logoMovimientos from "./assets/movimientos.png";
+import logoGestionCultivo from "./assets/gestionCultivo.png";
 import { Nav } from "./components/Nav";
 import { Aside } from "./components/Aside";
 import { ADMIN_INVENTARY_CONTROL } from "./router/RoutesTypes";
+import { ADMIN_CROP_MANAGEMENT } from "./router/RoutesTypes";
 
 function App() {
 
@@ -13,7 +15,6 @@ function App() {
   return (
     <>
       <Nav />
-
       <Aside />
       <section>
         <h1 className="title">Sistema Cafetero</h1>
@@ -34,8 +35,9 @@ function App() {
           </div>
           <div className="col-3">
             <Card
-              title={"Gestión de cultivos"}
-              optionLogo={logoListarProductos}
+              title={"Gestion de cultivos"}
+             optionLogo={logoGestionCultivo}
+             ruta={ADMIN_CROP_MANAGEMENT.CROP_MANAGEMENT}
             />
             <br />
             <Card
