@@ -8,7 +8,7 @@ export const Card = ({title, optionLogo, ruta}) => {
     navigate(ruta)
   }
   return (
-    <div class="card btn btn-Ligth" onClick={customNavigate}>
+    <div class="card card1 btn btn-Ligth" onClick={customNavigate}>
               
 
                 <div class="card-body">

@@ -1,11 +1,14 @@
 import { Routes, Route } from "react-router-dom";
 import App from "../App";
 import { ControlDeInventario } from "../control-de-inventario/ControlDeInventario";
-import { BASIC_MODULES_ROUTES, ADMIN_INVENTARY_CONTROL, ADMIN_GESTION_CULTIVOS, ADMIN_CONTROL_CALIDAD, ADMIN_CONTROL_COSTOS_FINANZAS, ADMIN_GESTION_MANTENIMIENTO } from "./RoutesTypes";
+import { BASIC_MODULES_ROUTES, ADMIN_INVENTARY_CONTROL, ADMIN_GESTION_CULTIVOS, ADMIN_CONTROL_CALIDAD, ADMIN_CONTROL_COSTOS_FINANZAS, ADMIN_GESTION_MANTENIMIENTO, ADMIN_REGISTRO_TRABAJADORES } from "./RoutesTypes";
 import { GestionDeCultivos } from "../gestion-de-cultivos/GestionDeCultivos";
 import { ControlDeCalidad } from "../control-de-calidad/ControlDeCalidad";
 import { ControlCostosFinanzas } from "../control-costos-finanzas/ControlCostosFinanzas";
 import { GestionDeMantenimiento } from "../gestion-de-mantenimiento/GestionDeMantenimiento";
+import { RegistroDeTrabajadores } from "../gestion_de_trabajadores/RegistroDeTrabajadores";
+import { Trabajador } from "../gestion_de_trabajadores/Trabajador";
+import { RegistrarTrabajadores } from "../gestion_de_trabajadores/RegistrarTrabajadores";
 export const AppRouter = () => {
   return (
     <>
@@ -31,6 +34,18 @@ export const AppRouter = () => {
         <Route
           path={ADMIN_GESTION_MANTENIMIENTO.GESTION_MANTENIMIENTO}
           element={<GestionDeMantenimiento />}
+        />
+        <Route
+          path={ADMIN_REGISTRO_TRABAJADORES.REGISTRO_TRABAJADORES}
+          element={<RegistroDeTrabajadores />}
+        />
+        <Route
+          path={ADMIN_REGISTRO_TRABAJADORES.TRABAJADORES}
+          element={<Trabajador />}
+        />
+        <Route
+          path={ADMIN_REGISTRO_TRABAJADORES.REGISTRAR_TRABAJADORES}
+          element={<RegistrarTrabajadores/>}
         />
       </Routes>
     </>

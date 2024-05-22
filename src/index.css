@@ -94,7 +94,7 @@ section{
   top: 60px;
   position: absolute;
   left: 270px;
-  width: 78%;
+  width: 77%;
 }
 .title{
   color: #42372e;
@@ -106,8 +106,9 @@ section{
 .btn-Ligth:hover{
   background-color: rgb(240, 240, 240);
 }
-.card{
+.card1{
   height: 320px;
+  width: 220px;
 }
 .select-tipo-insumo{
   width: 270px;
@@ -203,4 +204,60 @@ button{
 }
 .agregar{
   width: 140px;
+}
+.ml{
+  margin-left: 10px;
+}
+.card2{
+  width: 220px;
+  margin: 0 15px 15px 0;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+}
+.trabajador{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  height: 340px;
+  margin-top: 15px;
+}
+.img2{
+height: 230px;
+}
+.fotoTrabajador{
+  width: 300px;
+  top: 30px;
+  height: 340px;
+}
+.infoTrabajador{
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.fotoTrabajador-img{
+  border-radius: 30px;
+}
+.registroTrabajadores{
+  background-color: #7e634e;
+  border-radius: 20px;
+}
+.formTrabajadore{
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.input{
+  width: 46%;
+  margin: 5px 18px 5px 18px;
+}
+.registrar{
+  margin-top: 24px;
 }

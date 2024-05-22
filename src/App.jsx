@@ -5,7 +5,7 @@ import logoSalidas from "./assets/logoSalidas.png";
 import logoMovimientos from "./assets/movimientos.png";
 import { Nav } from "./components/Nav";
 import { Aside } from "./components/Aside";
-import { ADMIN_INVENTARY_CONTROL, ADMIN_GESTION_CULTIVOS, ADMIN_CONTROL_CALIDAD, ADMIN_CONTROL_COSTOS_FINANZAS, ADMIN_GESTION_MANTENIMIENTO } from "./router/RoutesTypes";
+import { ADMIN_INVENTARY_CONTROL, ADMIN_GESTION_CULTIVOS, ADMIN_CONTROL_CALIDAD, ADMIN_CONTROL_COSTOS_FINANZAS, ADMIN_GESTION_MANTENIMIENTO, ADMIN_REGISTRO_TRABAJADORES } from "./router/RoutesTypes";
 
 function App() {
 
@@ -18,7 +18,7 @@ function App() {
       <section>
         <h1 className="title">Sistema Cafetero</h1>
         <br />
-        <div className="row">
+        <div className="cards">
           <div className="col-3">
             <Card
               title={"Control de inventario"}
@@ -42,6 +42,7 @@ function App() {
             <Card
               title={"Registro de trabajadores"}
               optionLogo={logoMovimientos}
+              ruta={ADMIN_REGISTRO_TRABAJADORES.REGISTRO_TRABAJADORES}
             />
             <br />
           </div>

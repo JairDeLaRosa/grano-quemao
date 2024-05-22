@@ -17,3 +17,8 @@ export const ADMIN_CONTROL_COSTOS_FINANZAS = {
 export const ADMIN_GESTION_MANTENIMIENTO = {
   GESTION_MANTENIMIENTO: "/gestion-mantenimiento",
 }
+export const ADMIN_REGISTRO_TRABAJADORES = {
+  REGISTRO_TRABAJADORES: "/registro-trabajadores",
+  TRABAJADORES: "/trabajador",
+  REGISTRAR_TRABAJADORES: "/registrar-trabajador"
+}
