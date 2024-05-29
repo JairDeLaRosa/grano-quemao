@@ -48,6 +48,7 @@ h1{
   color: #fff9e1;
 }
 .grano-quemado{
+  background-color: transparent;
   position: absolute;
   color: #fff9e1;
   left: 90px;
@@ -55,10 +56,12 @@ h1{
   font-weight: 400;
   font-style: italic;
   font-size: 20px;
-  transition: all 0.05s;
+  padding: 5px;
 
 }
 .salir{
+  padding: 5px;
+  background-color: transparent;
   position: absolute;
   right: 90px;
   color: #fff9e1;
@@ -66,10 +69,9 @@ h1{
   font-weight: 400;
   font-style: italic;
   font-size: 20px;
-  transition: all 0.05s;
+  transition: all 0.3s;
 }
 .salir:hover,.grano-quemado:hover{
-  font-size: 21px;
   color: #fff9e1;
   background-color: #816a58;
 }
@@ -95,8 +97,11 @@ section{
   width: 78%;
 }
 .title{
-  color: #7e634e;
+  color: #42372e;
   display: block;
+}
+.fixed{
+  position: fixed;
 }
 .btn-Ligth:hover{
   background-color: rgb(240, 240, 240);
@@ -149,7 +154,7 @@ section{
   display: none;
 }
 .editar{
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   background-color: #a0a0a07c;
@@ -160,4 +165,38 @@ section{
 }
 .sendEdit{
   margin-top: 32px;
+}
+.buttonBack{
+  background-color: #ffffff21;
+}
+.buttonBack:hover{
+  background-color: #ffffff5e;
+}
+.buttonBackInventario{
+  background-color: transparent;
+  margin-top: 6px;
+  height: 45px;
+  width: 60px;
+  
+}
+.buttonBackInventario:hover{
+  background-color: #645b5b20;
+}
+button{
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: none;
+}
+.select{
+  width: 200px;
+}
+.colorSubtitle{
+  color: #7e634e;
+}
+.cardActividad{
+  width: 49%;
+  background-color: white;
+}
+.aggActividad{
+  width: 160px;
 }

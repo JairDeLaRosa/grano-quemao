@@ -14,7 +14,7 @@ export const Card = ({title, optionLogo, ruta}) => {
                 <div class="card-body">
                 <h5 class="card-title">{title}</h5>
                 </div>
-                <img src={optionLogo} class="card-img-top" alt="Inventario" />
+                <img src={optionLogo} className="card-img-top" alt="Inventario" />
               
               
             </div>

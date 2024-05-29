@@ -6,8 +6,12 @@ import logoMovimientos from "./assets/movimientos.png";
 import logoGestionCultivo from "./assets/gestionCultivo.png";
 import { Nav } from "./components/Nav";
 import { Aside } from "./components/Aside";
+<<<<<<< HEAD
 import { ADMIN_INVENTARY_CONTROL } from "./router/RoutesTypes";
 import { ADMIN_CROP_MANAGEMENT } from "./router/RoutesTypes";
+=======
+import { ADMIN_INVENTARY_CONTROL, ADMIN_GESTION_CULTIVOS } from "./router/RoutesTypes";
+>>>>>>> 573e61624c6cf79247192b491b7d35a1acf43f5d
 
 function App() {
 
@@ -35,9 +39,15 @@ function App() {
           </div>
           <div className="col-3">
             <Card
+<<<<<<< HEAD
               title={"Gestion de cultivos"}
              optionLogo={logoGestionCultivo}
              ruta={ADMIN_CROP_MANAGEMENT.CROP_MANAGEMENT}
+=======
+              title={"Gestión de cultivos"}
+              optionLogo={logoListarProductos}
+              ruta={ADMIN_GESTION_CULTIVOS.GESTION_CULTIVOS}
+>>>>>>> 573e61624c6cf79247192b491b7d35a1acf43f5d
             />
             <br />
             <Card

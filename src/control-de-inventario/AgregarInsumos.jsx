@@ -1,6 +1,8 @@
 import React from 'react'
+import { IoIosArrowRoundBack } from 'react-icons/io';
+
 import { useForm } from 'react-hook-form';
-export const AgregarInsumos = ({onSubmit}) => {
+export const AgregarInsumos = ({onSubmit, back}) => {
   const {
     register,
     handleSubmit,
@@ -11,7 +13,13 @@ export const AgregarInsumos = ({onSubmit}) => {
   }
 return (
 <form onSubmit={handleSubmit(onSubmitI)} className='row g-3'>
-      <h1>Agregar insumo</h1>
+  <div className='back'>
+  <h1>Agregar insumo</h1>
+      <button className='buttonBack' onClick={back} >
+            <IoIosArrowRoundBack size={40} color='white'/>
+          </button>
+  </div>
+      
       <div class="col-md-5">
         <label for="inputEmail4" class="form-label">
           Cantidad
