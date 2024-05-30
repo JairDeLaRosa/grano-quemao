@@ -261,3 +261,15 @@ height: 230px;
 .registrar{
   margin-top: 24px;
 }
+.registerM{
+  position: absolute;
+  right: 20px;
+}
+.formRegistrarMantenimiento{
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #7e634e;
+}
+.mantenimientItem{
+  height: 17vh;
+}

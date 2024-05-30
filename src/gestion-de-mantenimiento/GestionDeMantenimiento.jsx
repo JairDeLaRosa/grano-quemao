@@ -10,13 +10,18 @@ import { InformeMantenimiento } from "./InformeMantenimiento";
 
 export const GestionDeMantenimiento = () => {
   const [actividades, setActividades] = useState(mantenimientos.mantenimiento);
+  const [registrrMantenimiento, setRegistrarMantenimiento] = useState(false);
 
   const agregarMantenimiento = (nuevaActividad) => {
     setActividades([...actividades, nuevaActividad]);
   };
   const navigate = useNavigate();
   const back = () => {
-    navigate(-1);
+    if (registrrMantenimiento) {
+      setRegistrarMantenimiento(false);
+    } else {
+      navigate(-1);
+    }
   };
   return (
     <>
@@ -31,9 +36,23 @@ export const GestionDeMantenimiento = () => {
         </div>
         <br />
         <div>
-          <RegistroMantenimiento agregarMantenimiento={agregarMantenimiento} />
-          <ListaMantenimiento actividades={actividades} />
-          <InformeMantenimiento actividades={actividades}/>
+          {registrrMantenimiento ? (
+            <RegistroMantenimiento
+              agregarMantenimiento={agregarMantenimiento}
+              RegistrarMantenimiento={setRegistrarMantenimiento}
+            />
+          ) : (
+            <>
+              <button
+                className="btn btn-primary registerM"
+                onClick={() => setRegistrarMantenimiento(true)}
+              >
+                Registrar mantenimiento
+              </button>
+              <ListaMantenimiento actividades={actividades} />
+              <InformeMantenimiento actividades={actividades} />
+            </>
+          )}
         </div>
       </section>
     </>
