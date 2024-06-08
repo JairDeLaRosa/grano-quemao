@@ -12,7 +12,7 @@ export const Actividad = () => {
           <b>Información: </b>Lorem ipsum, dolor sit amet consectetur
           adipisicing elit. Iusto veniam officiis nemo dolorum. Autem
           exercitationem natus alias esse officiis! Veritatis iure quis et autem
-          eum minima facilis accusamus a repudiandae.
+          eum minima facilis accusamus a repudiandae. 
         </p>
       </div>
       <div className="d-flex justify-content-between"><span><b>Ultima actualización: </b>00/00/0000</span> <a href="">Modificar</a></div>

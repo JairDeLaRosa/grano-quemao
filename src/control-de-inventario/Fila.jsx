@@ -13,9 +13,9 @@ export const Fila = ({alert, edit, tipeEdit, setEdit}) => {
   
   return (
     <div class="row celdas">
+      <div class="col-1 celda"></div>
       <div class="col-2 celda"></div>
-      <div class="col-2 celda"></div>
-      <div class="col-2 celda"></div>
+      <div class="col-3 celda"></div>
       <div class="col-2 celda"></div>
       <div class="col-2 celda"></div>
       <div class="col-2 celda">

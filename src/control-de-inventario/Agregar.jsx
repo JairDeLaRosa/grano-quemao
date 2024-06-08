@@ -16,7 +16,7 @@ export const Agregar = ({ tipe, agg ,alertAgg }) => {
           
           <div className="containerForm">
           
-            {(tipe==="insumos")?<AgregarInsumos onSubmit={onSubmit} back={back}/>:null}
+            {(tipe==="biocidas")?<AgregarInsumos onSubmit={onSubmit} back={back}/>:null}
             {(tipe==="maquinaria")?<AgregarMaquinaria onSubmit={onSubmit} back={back}/>:null}
             {(tipe==="otra")?<AgregarOtros onSubmit={onSubmit} back={back}/>:null}
             

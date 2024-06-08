@@ -6,7 +6,8 @@ import logoMovimientos from "./assets/movimientos.png";
 import logoControlDeCalidad from "./assets/ControlDeCalidad.png";
 import { Nav } from "./components/Nav"; 
 import { Aside } from "./components/Aside";
-import { ADMIN_INVENTARY_CONTROL, ADMIN_GESTION_CULTIVOS,WEATHER_MONITORING_MANAGER, QA } from "./router/RoutesTypes";
+
+import { ADMIN_INVENTARY_CONTROL, ADMIN_GESTION_CULTIVOS, ADMIN_CONTROL_CALIDAD, ADMIN_CONTROL_COSTOS_FINANZAS, ADMIN_GESTION_MANTENIMIENTO, ADMIN_REGISTRO_TRABAJADORES,WEATHER_MONITORING_MANAGER, QA } from "./router/RoutesTypes";
 
 function App() {
 
@@ -19,7 +20,7 @@ function App() {
       <section>
         <h1 className="title">Sistema Cafetero</h1>
         <br />
-        <div className="row">
+        <div className="cards">
           <div className="col-3">
             <Card
               title={"Control de inventario"}
@@ -44,6 +45,7 @@ function App() {
             <Card
               title={"Registro de trabajadores"}
               optionLogo={logoMovimientos}
+              ruta={ADMIN_REGISTRO_TRABAJADORES.REGISTRO_TRABAJADORES}
             />
             <br />
           </div>
@@ -53,13 +55,14 @@ function App() {
               ruta={QA.Q_A}
             />
             <br />
-            <Card title={"Gestión de mantenimiento"} optionLogo={logoSalidas} />
+            <Card title={"Gestión de mantenimiento"} optionLogo={logoSalidas} ruta={ADMIN_GESTION_MANTENIMIENTO.GESTION_MANTENIMIENTO}/>
             <br />
           </div>
           <div className="col-3">
             <Card
               title={"Control de costos y finanzas"}
               optionLogo={logoMovimientos}
+              ruta={ADMIN_CONTROL_COSTOS_FINANZAS.CONTROL_COSTOS_FINANZAS}
             />
             <br />
             <Card
