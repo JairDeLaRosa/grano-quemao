@@ -8,8 +8,8 @@ import { Edit } from "./Edit";
 import { Agregar } from "./Agregar";
 
 export const ControlDeInventario = () => {
-  const [tipeEdit,setTipeEdit]=useState("insumos")
-  const [tipeAgg,setTipeAgg]=useState("insumos")
+  const [tipeEdit,setTipeEdit]=useState("biocidas")
+  const [tipeAgg,setTipeAgg]=useState("biocidas")
   const [visible, setVisible] = useState("alert alert-primary false");
   const [visibleEdit, setVisibleEdit] = useState("alert alert-primary false");
   const [visibleAgg, setVisibleAgg] = useState("alert alert-primary false");
@@ -28,7 +28,7 @@ export const ControlDeInventario = () => {
 
   const handleSelect = ({ target }) => {
     setTipeAgg(target.value)
-    if (target.value === "insumos") { 
+    if (target.value === "biocidas") { 
       setVisibleTable1("container text-center top-table true");
       setVisibleTable2("container text-center top-table false");
       setVisibleTable3("container text-center top-table false");
@@ -90,7 +90,7 @@ export const ControlDeInventario = () => {
             className="form-select select-tipo-insumo"
             aria-label="Default select example"
           >
-            <option value="insumos">Insumos</option>
+            <option value="biocidas">Biocidas</option>
             <option value="maquinaria">Maquinarias</option>
             <option value="otra">Otros</option>
           </select>
@@ -102,15 +102,15 @@ export const ControlDeInventario = () => {
 
         <div className={visibleTable1}>
           <div className="row encabezado">
-            <div className="col-2 celda">Id</div>
-            <div className="col-2 celda">Tipo</div>
+            <div className="col-1 celda">Id</div>
             <div className="col-2 celda">Nombre</div>
+            <div className="col-3 celda">Descripción</div>
             <div className="col-2 celda">Cantidad</div>
             <div className="col-2 celda">Costos</div>
             <div className="col-2 celda">Acciones</div>
           </div>
 
-          <Fila alert={alert} edit={setEditar} setEdit={setTipeEdit} tipeEdit={"insumos"}/>
+          <Fila alert={alert} edit={setEditar} setEdit={setTipeEdit} tipeEdit={"biocidas"}/>
         </div>
         <div className={visibleTable2}>
           <div className="row encabezado">

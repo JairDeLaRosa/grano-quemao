@@ -28,15 +28,15 @@ export const Trabajador = () => {
             <img src={foto} alt="fotoperfil" className="fotoTrabajador-img"/>
           </div>
           <div className="infoTrabajador">
-            <h2>Jair De La Rosa</h2>
-            <h4>Trabajo: Area administrativa, asesor de ventas</h4>
+            <h2 className="nameTrabajador">Jair De La Rosa</h2>
+            <h4 className="subTitle">Trabajo: Area administrativa, asesor de ventas</h4>
             <span>Fecha de contratación: 17/08/2023</span>
             <br />
             <span>Salario mensual:  $ 300.000,00</span>
             <br />
             <span>Edad: 24 años</span>
             <br />
-            <h4>Eps: Mutual ser</h4>
+            <h4 className="subTitle">Eps: Mutual ser</h4>
             <span>Afiliación: 09/07/2010</span>
             <br />
             <span>Costo: $ 100.000,00</span>
