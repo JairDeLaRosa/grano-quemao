@@ -3,9 +3,11 @@ import logoListarProductos from "./assets/listaProductos.png";
 import logoRegistrarProductos from "./assets/inventario.png";
 import logoSalidas from "./assets/logoSalidas.png";
 import logoMovimientos from "./assets/movimientos.png";
-import { Nav } from "./components/Nav";
+import logoControlDeCalidad from "./assets/ControlDeCalidad.png";
+import { Nav } from "./components/Nav"; 
 import { Aside } from "./components/Aside";
-import { ADMIN_INVENTARY_CONTROL, ADMIN_GESTION_CULTIVOS, ADMIN_CONTROL_CALIDAD, ADMIN_CONTROL_COSTOS_FINANZAS, ADMIN_GESTION_MANTENIMIENTO, ADMIN_REGISTRO_TRABAJADORES } from "./router/RoutesTypes";
+
+import { ADMIN_INVENTARY_CONTROL, ADMIN_GESTION_CULTIVOS, ADMIN_CONTROL_CALIDAD, ADMIN_CONTROL_COSTOS_FINANZAS, ADMIN_GESTION_MANTENIMIENTO, ADMIN_REGISTRO_TRABAJADORES,WEATHER_MONITORING_MANAGER, QA } from "./router/RoutesTypes";
 
 function App() {
 
@@ -29,6 +31,7 @@ function App() {
             <Card
               title={"Monitoreo de clima y temperatura"}
               optionLogo={logoListarProductos}
+              ruta={WEATHER_MONITORING_MANAGER.WEATHER_MONITORING}
             />
             <br />
           </div>
@@ -37,7 +40,7 @@ function App() {
               title={"Gestión de cultivos"}
               optionLogo={logoListarProductos}
               ruta={ADMIN_GESTION_CULTIVOS.GESTION_CULTIVOS}
-            />
+              />
             <br />
             <Card
               title={"Registro de trabajadores"}
@@ -47,7 +50,10 @@ function App() {
             <br />
           </div>
           <div className="col-3">
-            <Card title={"Control de calidad"} optionLogo={logoSalidas} ruta={ADMIN_CONTROL_CALIDAD.CONTROL_CALIDAD}/>
+            <Card title={"Control de calidad"}  
+              optionLogo={logoControlDeCalidad}
+              ruta={QA.Q_A}
+            />
             <br />
             <Card title={"Gestión de mantenimiento"} optionLogo={logoSalidas} ruta={ADMIN_GESTION_MANTENIMIENTO.GESTION_MANTENIMIENTO}/>
             <br />

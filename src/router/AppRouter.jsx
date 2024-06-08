@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import App from "../App";
 import { ControlDeInventario } from "../control-de-inventario/ControlDeInventario";
+
 import { BASIC_MODULES_ROUTES, ADMIN_INVENTARY_CONTROL, ADMIN_GESTION_CULTIVOS, ADMIN_CONTROL_CALIDAD, ADMIN_CONTROL_COSTOS_FINANZAS, ADMIN_GESTION_MANTENIMIENTO, ADMIN_REGISTRO_TRABAJADORES } from "./RoutesTypes";
 import { GestionDeCultivos } from "../gestion-de-cultivos/GestionDeCultivos";
 import { ControlDeCalidad } from "../control-de-calidad/ControlDeCalidad";
@@ -9,6 +10,9 @@ import { GestionDeMantenimiento } from "../gestion-de-mantenimiento/GestionDeMan
 import { RegistroDeTrabajadores } from "../gestion_de_trabajadores/RegistroDeTrabajadores";
 import { Trabajador } from "../gestion_de_trabajadores/Trabajador";
 import { RegistrarTrabajadores } from "../gestion_de_trabajadores/RegistrarTrabajadores";
+import { MonitoreoDeClima } from "../monitoreo-de-clima/HomePage";
+import { ControlDeCalidad} from "../control-de-calidad/HomePage";
+import { BASIC_MODULES_ROUTES, ADMIN_INVENTARY_CONTROL, WEATHER_MONITORING_MANAGER, QA} from "./RoutesTypes";
 export const AppRouter = () => {
   return (
     <>
@@ -20,8 +24,12 @@ export const AppRouter = () => {
           element={<ControlDeInventario />}
         />
         <Route
-          path={ADMIN_GESTION_CULTIVOS.GESTION_CULTIVOS}
-          element={<GestionDeCultivos />}
+          path={WEATHER_MONITORING_MANAGER.WEATHER_MONITORING}
+          element={<MonitoreoDeClima />}
+        />
+        <Route
+          path={QA.Q_A}
+          element={<ControlDeCalidad/>}
         />
         <Route
           path={ADMIN_CONTROL_CALIDAD.CONTROL_CALIDAD}

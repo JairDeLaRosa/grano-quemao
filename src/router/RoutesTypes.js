@@ -5,7 +5,9 @@ export const BASIC_MODULES_ROUTES = {
 export const ADMIN_INVENTARY_CONTROL = {
    INVENTARY_CONTROL: "/inventary-control",
 }
+
 export const ADMIN_GESTION_CULTIVOS = {
+
   GESTION_CULTIVOS: "/gestion-cultivos",
 }
 export const ADMIN_CONTROL_CALIDAD = {
@@ -22,3 +24,12 @@ export const ADMIN_REGISTRO_TRABAJADORES = {
   TRABAJADORES: "/trabajador",
   REGISTRAR_TRABAJADORES: "/registrar-trabajador"
 }
+
+export const WEATHER_MONITORING_MANAGER = {
+  WEATHER_MONITORING: "/monitoreo-clima"
+}
+
+export const QA= {
+  Q_A: "/control-calidad"
+}
+
