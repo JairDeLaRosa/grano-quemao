@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "react-scripts start",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
@@ -11,7 +12,7 @@
   },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
-    "axios": "^1.6.8",
+    "axios": "^1.7.2",
     "bootstrap-icons": "^1.11.3",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",

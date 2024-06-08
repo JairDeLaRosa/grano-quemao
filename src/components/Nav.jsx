@@ -5,8 +5,8 @@ export const Nav = () => {
   return (
     <nav > 
         <img src={logo} alt="logo" className="logo" />
-        <button className="grano-quemado">Grano Quemado</button>
-        <button className=" salir">Salir</button>
+        <button className="btn grano-quemado">Grano Quemado</button>
+        <button className="btn salir">Salir</button>
       </nav>
   )
 }

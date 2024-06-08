@@ -1,8 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import App from "../App";
 import { ControlDeInventario } from "../control-de-inventario/ControlDeInventario";
-import { BASIC_MODULES_ROUTES, ADMIN_INVENTARY_CONTROL, ADMIN_GESTION_CULTIVOS } from "./RoutesTypes";
-import { GestionDeCultivos } from "../gestion-de-cultivos/GestionDeCultivos";
+import { MonitoreoDeClima } from "../monitoreo-de-clima/HomePage";
+import { ControlDeCalidad} from "../control-de-calidad/HomePage";
+import { BASIC_MODULES_ROUTES, ADMIN_INVENTARY_CONTROL, WEATHER_MONITORING_MANAGER, QA} from "./RoutesTypes";
 export const AppRouter = () => {
   return (
     <>
@@ -14,8 +15,12 @@ export const AppRouter = () => {
           element={<ControlDeInventario />}
         />
         <Route
-          path={ADMIN_GESTION_CULTIVOS.GESTION_CULTIVOS}
-          element={<GestionDeCultivos />}
+          path={WEATHER_MONITORING_MANAGER.WEATHER_MONITORING}
+          element={<MonitoreoDeClima />}
+        />
+        <Route
+          path={QA.Q_A}
+          element={<ControlDeCalidad/>}
         />
       </Routes>
     </>

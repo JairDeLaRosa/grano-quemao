@@ -200,3 +200,66 @@ button{
 .aggActividad{
   width: 160px;
 }
+
+.weather-card, .crop-status, .crop-recommendations {  
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #907761;
+  padding: 50px;
+  margin-left: 270px;
+  border-radius: 10px;
+  background-color: white;
+  color: #7e634e;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.weather-card h2, .crop-status h2, .crop-recommendations h2 {
+  color: #42372e;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+}       
+
+.weather-card p, .crop-status p, .crop-recommendations p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
+.quality-dashboard {
+  margin-left: 270px;
+  padding: 20px;
+}
+
+.quality-dashboard h1 {
+  color: #42372e;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+}
+
+.quality-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.quality-card {
+  width: 200px;
+  border: 1px solid #907761;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  color: #7e634e;
+}
+
+.quality-card h2 {
+  font-size: 18px;
+  color: #42372e;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.quality-card p {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  margin: 5px 0;
+}
