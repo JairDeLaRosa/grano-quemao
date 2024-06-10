@@ -7,7 +7,6 @@ export const ADMIN_INVENTARY_CONTROL = {
 }
 
 export const ADMIN_GESTION_CULTIVOS = {
-
   GESTION_CULTIVOS: "/gestion-cultivos",
 }
 export const ADMIN_CONTROL_CALIDAD = {

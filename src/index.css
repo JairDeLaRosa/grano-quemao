@@ -287,7 +287,7 @@ height: 230px;
   flex-direction: column;
   border: 1px solid #907761;
   padding: 50px;
-  margin-left: 270px;
+  margin-left: 30px;
   border-radius: 10px;
   background-color: white;
   color: #7e634e;
@@ -344,4 +344,12 @@ height: 230px;
   font-size: 14px;
   margin: 5px 0;
 }
-
+.fondo{
+  background-image: url("./assets/fondo.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+}
